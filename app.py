@@ -14,7 +14,7 @@ import pickle
 filename = 'nlp_model.pkl'
 clf = pickle.load(open(filename, 'rb'))
 cv=pickle.load(open('tranform.pkl','rb'))
-app = Flask(__name__, template_folder='templets')
+app = Flask(__name__)
 
 @app.route('/')
 def home():

@@ -15,7 +15,7 @@
 		
 	</div>
 	</header>
-	<p style="color:blue;font-size:20;text-align: center;"><b>Results for Comment</b></p>
+	<p style="color:blue;font-size:20;text-align: center;"><b>Results for Text messages</b></p>
 	<div class="results">
 
 
@@ -23,8 +23,12 @@
 	{% if prediction == 1%}
 	<h2 style="color:green;">Non Convertible</h2>
 	{% elif prediction == 0%}
-	<h2 style="color:red;">Convertible Customer (It is a Ham)</h2>
+	<h2 style="color:red;">Convertible Customer </h2>
+	
+	
 	{% endif %}
+        <br><br>
+    <a href='/'>go back to home page</a>
 
 	</div>
 
